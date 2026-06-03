@@ -42,3 +42,25 @@ Popular methods:
   - Learn special tokens instead of weights
 
 Most modern applications **use PEFT instead of full fine-tuning**.
+
+# 📉 What LoRA Actually Does
+
+Instead of updating billions of parameters:
+
+- Original weights stay frozen
+- Small trainable matrices are added
+
+Conceptually:
+
+W′=W+ΔW
+
+Where:
+
+- W = original weights
+- ΔW = low-rank adaptation
+
+This dramatically reduces:
+
+- VRAM usage
+- training cost
+- storage size
