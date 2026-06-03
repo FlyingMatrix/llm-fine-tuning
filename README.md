@@ -43,7 +43,7 @@ Popular methods:
 
 Most modern applications **use PEFT instead of full fine-tuning**.
 
-# 📉 What LoRA Actually Does
+## 📉 What LoRA Actually Does
 
 Instead of updating billions of parameters:
 
